@@ -1,0 +1,36 @@
+showCompass = 0;
+showGPS = 0;
+showWatch = 0;
+
+respawn = "BASE";
+respawnDelay = 1;
+
+class Header
+{
+gameType = COOP;
+minPlayers = 1;
+maxPlayers = 10;
+};
+
+class Weapons
+{
+	// Add the weapons to the mission gear
+class M107 { count = 3; };
+class Binocular { count = 5; };
+class M24 { count = 3; };
+class GPS { count = 3; };
+class G36C { count = 3; };
+class G36_C_SD_Eotech  { count = 3; };
+class Colt1911 { count = 3; };
+class M9SD { count = 3; };
+class M4A1_HWS_GL_SD_CAMO  { count = 3; };
+};
+
+class Magazines
+{
+	// Add the magazines to the mission gear
+class 10Rnd_127x99_m107 { count = 150; };
+class 15Rnd_9x19_M9SD  { count = 250; };
+class 7Rnd_45ACP_1911  { count = 250; };
+class 100Rnd_556x45_BetaCMag { count = 250; };
+};

@@ -1,0 +1,105 @@
+
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+
+respawn = "BASE";
+respawnDelay = 2;
+
+class Header
+{
+gameType = COOP;
+minPlayers = 1;
+maxPlayers = 10;
+};
+
+// User Interface Classes outsourced to:
+#include "data\ui.hpp"
+
+class Extended_PreInit_EventHandlers 
+{
+	//example
+    // The name "gnrf_preCompile_test" needs to be unique
+	//can be called with '[] call gnrf_testInit_fnc;' anytime later
+	gnrf_preInit = "[] execVM 'preInit.sqf';"
+};
+
+
+
+//Parameters - Funfact: boolean values are treated as 0 (false) and 1(true) when checked in a script
+class Params
+{
+        class debugMode
+        {
+        //paramsArray[0]
+                title = "Debug Mode";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 0;
+        };
+        
+        class peaceMode
+        {
+        //paramsArray[1]
+                title = "'setFriends' in Debug Mode";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 0;
+        };
+
+				
+		class startTime
+        {
+        //paramsArray[2]
+                title = "Time of Day";
+                values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+                texts[] = {"00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"};
+                default = 6;
+        };
+		
+		class freezeTime
+        {
+        //paramsArray[3]
+                title = "Freeze Time of Day";
+                values[] = {0, 1};
+                texts[] = {"No", "Yes"};
+                default = 0;
+        };
+		
+		class constructionMode
+        {
+        //paramsArray[4]
+                title = "Construction Mode";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 0;
+        };
+		
+		class helperArrow
+        {
+        //paramsArray[5]
+                title = "Arrow Head Mode";
+                values[] = {0, 1};
+                texts[] = {"Disabled", "Enabled"};
+                default = 1;
+        };
+		
+	
+};
+
+
+
+class CfgSounds
+{
+	sounds[] = {
+		valkyrie
+	};
+	
+	class valkyrie
+		{
+		name = "valkyrie";
+		sound[] = {"data\sound\valkyrie.ogg", db+18, 1.0};
+		titles[] = {};
+	};
+};
+

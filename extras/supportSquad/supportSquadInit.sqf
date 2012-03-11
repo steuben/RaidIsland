@@ -1,0 +1,1 @@
+supportMCAS = false;publicVariable "supportMCAS";supportCAS = false;publicVariable "supportCAS";supportELVIS = false;publicVariable "supportELVIS";//supportMenu1= victor addAction [("<t color=""#ff6600"">" + ("Call in support") + "</t>"),"extras\supportSquad\supportSquadChoose.sqf", [], 300, false, true, ""]; 
