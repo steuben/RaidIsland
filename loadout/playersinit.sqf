@@ -147,10 +147,10 @@ if (player == steuben) then {
 
 "steubenSpawn" setMarkerPos getpos steuben; 
 
-"d_seal2h_ACE" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben1=this", 1, ""];
-"d_seal6h_ACE" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben2=this", 1, ""];
-"d_seal5h_ACE" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben3=this", 1, ""];
-"d_seal4h_ACE" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben4=this", 1, ""];
+"rb_marksman" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben1=this", 1, ""];
+"rb_ar" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben2=this", 1, ""];
+"rb_ranger1" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben3=this", 1, ""];
+"rb_engineer" createUnit [getMarkerPos "steubenSpawn", alpha, "steuben4=this", 1, ""];
 
 waitUntil {({alive _x} count units alpha) == 5};
 
@@ -360,7 +360,7 @@ _unit addWeapon "ACE_Earplugs";
 _unit addWeapon "ItemGPS";
 
 // RUCK
-_unit addWeapon "ACE_PRC119";
+//_unit addWeapon "ACE_PRC119";
 
 // DURCHLADEN
 reload steuben4;
@@ -400,10 +400,10 @@ if (player == bbq) then {
 
 "bbqSpawn" setMarkerPos getpos bbq; 
 
-"d_seal2h_ACE" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq1=this", 1, ""];
-"d_seal6h_ACE" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq2=this", 1, ""];
-"d_seal5h_ACE" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq3=this", 1, ""];
-"d_seal5h_ACE" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq4=this", 1, ""];
+"rb_medic" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq1=this", 1, ""];
+"rb_ar" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq2=this", 1, ""];
+"rb_ranger1" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq3=this", 1, ""];
+"rb_at" createUnit [getMarkerPos "bbqSpawn", bravo, "bbq4=this", 1, ""];
 
 waitUntil {({alive _x} count units bravo) == 5};
 
@@ -504,7 +504,7 @@ _unit addWeapon "ACE_Earplugs";
 _unit addWeapon "ItemGPS";
 
 // RUCK
-_unit addWeapon "ACE_Backpack_US";
+//_unit addWeapon "ACE_Backpack_US";
 
 // DURCHLADEN
 reload bbq2;
@@ -631,13 +631,7 @@ publicVariable "bbq1";
 publicVariable "bbq2";
 publicVariable "bbq3";
 publicVariable "bbq4";
-publicVariable "bbq5";
-publicVariable "bbq6";
-publicVariable "bbq7";
-publicVariable "bbq8";
-publicVariable "bbq9";
-publicVariable "bbq10";
-publicVariable "bbq11";
+
 
 {_x assignTeam "RED"} foreach [bbq1,bbq2,bbq3,bbq4];
 

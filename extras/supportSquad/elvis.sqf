@@ -34,7 +34,7 @@ if (!supportELVIS) then
 			// APACHE
 			// Elvis="AH64D_EP1" createVehicle getMarkerPos "ElvisSpawn";
 			[] execVM "loadout\reinforcement.sqf";
-		
+			loadout = elvis addAction ["Save Gear","loadout\loadout.sqf"];
 		
 		sleep 3;
 
@@ -204,7 +204,9 @@ if (!supportELVIS) then
 					sleep 7;
 					
 					deleteVehicle elvis1;
-					deleteVehicle elvis2; 
+					deleteVehicle elvis2;
+					deleteVehicle elvis3;
+					deleteVehicle elvis4; 					
 					deleteVehicle elvis; 
 					
 					// Reset Victor Action

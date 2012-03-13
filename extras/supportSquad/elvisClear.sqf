@@ -10,7 +10,7 @@ _dude =_this select 1;
 _dude sideChat "ELVIS, that would be all for now. RTB, copy.";
 
 teamELVIS2 = Creategroup WEST;
-[ELVIS1, ELVIS2] joinSilent teamELVIS2;
+[ELVIS1, ELVIS2, ELVIS3, ELVIS4] joinSilent teamELVIS2;
 
 teamELVIS2 = group ELVIS1;
 ELVIS1 setGroupID ["ELVIS","GroupColor4"];
@@ -36,7 +36,7 @@ sleep 2;
 ELVIS3 leaveVehicle ELVIS;
 ELVIS4 leaveVehicle ELVIS;
 
-waitUntil {(vehicle ELVIS1 == ELVIS1) AND (vehicle ELVIS2 == ELVIS2) AND (vehicle ELVIS3 == ELVIS3) AND (vehicle ELVIS4 == ELVIS4)};
+waitUntil {(vehicle ELVIS1 == ELVIS1) AND (vehicle ELVIS2 == ELVIS2)};
 
 sleep 10;
 

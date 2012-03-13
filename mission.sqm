@@ -6,7 +6,6 @@ class Mission
 		"acex_usnavy_men_usmc",
 		"ace_sys_weapons",
 		"ibr_isladuala",
-		"Ard_ACU_INF1_ACE",
 		"ace_sys_aitalk",
 		"ace_sys_stamina",
 		"BI_SRRS",
@@ -28,12 +27,13 @@ class Mission
 		"ace_sys_crewserved",
 		"CAWheeled",
 		"ibr_datsun",
-		"Warfare2Vehicles"
+		"Warfare2Vehicles",
+		"rangers"
 	};
 	addOnsAuto[]=
 	{
 		"ace_sys_aitalk",
-		"Ard_ACU_INF1_ACE",
+		"rangers",
 		"BI_SRRS",
 		"cacharacters2",
 		"ca_modules_functions",
@@ -119,7 +119,7 @@ class Mission
 					position[]={4329.2236,15.254852,2288.8167};
 					id=9;
 					side="WEST";
-					vehicle="d_seal1h_ACE";
+					vehicle="rb_teamleader";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -159,7 +159,7 @@ class Mission
 					azimut=-35.778301;
 					id=11;
 					side="WEST";
-					vehicle="d_seal1h_ACE";
+					vehicle="rb_teamleader";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -3618,8 +3618,7 @@ class Mission
 			position[]={1344.7972,2.8518448,739.24438};
 			a=65;
 			b=65;
-			activationBy="EAST";
-			activationType="NOT PRESENT";
+			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="this AND getDammage grad3 == 1 AND getDammage grad4 == 1 AND getDammage grad1 == 1 AND getDammage grad2 == 1;";

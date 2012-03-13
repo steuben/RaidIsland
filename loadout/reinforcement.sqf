@@ -27,22 +27,22 @@ if (player == steuben) then
 {
 
 if (!alive steuben1) then {
-	"d_seal2h_ACE" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben1=this", 1, ""];
+	"rb_marksman" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben1=this", 1, ""];
 	steuben1 MoveInCargo [elvis, 1];
 };
 
 if (!alive steuben2) then {
-	"d_seal6h_ACE" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben2=this", 1, ""];
+	"rb_ar" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben2=this", 1, ""];
 	steuben2 MoveInCargo [elvis, 2];
 };
 
 if (!alive steuben3) then {
-	"d_seal5h_ACE" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben3=this", 1, ""];
+	"rb_ranger1" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben3=this", 1, ""];
 	steuben3 MoveInCargo [elvis, 3];
 };
 
 if (!alive steuben4) then {
-	"d_seal4h_ACE" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben4=this", 1, ""];
+	"rb_engineer" createUnit [getMarkerPos "elvisSpawn", alpha, "steuben4=this", 1, ""];
 	steuben4 MoveInCargo [elvis, 4];
 };
 
@@ -60,22 +60,22 @@ if (!alive steuben4) then {
 if (player == bbq) then {
 
 if (!alive bbq1) then {
-	"d_seal2h_ACE" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq1=this", 1, ""];
+	"rb_medic" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq1=this", 1, ""];
 	bbq1 MoveInCargo [elvis, 5];
 };
 
 if (!alive bbq2) then {
-	"d_seal6h_ACE" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq2=this", 1, ""];
+	"rb_ar" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq2=this", 1, ""];
 	bbq2 MoveInCargo [elvis, 6];
 };
 
 if (!alive bbq3) then {
-	"d_seal5h_ACE" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq3=this", 1, ""];
+	"rb_ranger1" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq3=this", 1, ""];
 	bbq3 MoveInCargo [elvis, 7];
 };
 
 if (!alive bbq4) then {
-	"d_seal5h_ACE" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq4=this", 1, ""];
+	"rb_at" createUnit [getMarkerPos "elvisSpawn", bravo, "bbq4=this", 1, ""];
 	bbq4 MoveInCargo [elvis, 8];
 };
 
