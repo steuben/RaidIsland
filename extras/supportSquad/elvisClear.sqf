@@ -22,13 +22,13 @@ ELVIS_WP1  setWaypointType "MOVE";
 ELVIS_WP1  setWaypointFormation "WEDGE";
 ELVIS_WP1  setWaypointBehaviour "SAFE";
 ELVIS_WP1  setWaypointSpeed "FULL";
-ELVIS_WP1 setWaypointStatements ["true", "RTB=true"];
+ELVIS_WP1 setWaypointStatements ["true", "elvisRTB=true"];
 
 sleep 2;
 
 ELVIS1 sideChat "Copy that KINGFISH. ELVIS RTB, out.";
 
-waitUntil {RTB};
+waitUntil {elvisRTB};
 
 ELVIS1 leaveVehicle ELVIS;
 ELVIS2 leaveVehicle ELVIS;
@@ -46,6 +46,7 @@ deleteVehicle ELVIS3;
 deleteVehicle ELVIS4;  
 deleteVehicle ELVIS; 
 
+elvisRTB = false;
 supportELVIS = false;
 publicVariable "supportELVIS";
 
@@ -55,7 +56,7 @@ supportELVISBusy = false;
 publicVariable "supportELVISBusy";
 
 // Reset Victor Action
-[] execVM "extras\supportSquad\supportSquadInit.sqf";
+//[] execVM "extras\supportSquad\supportSquadInit.sqf";
 //[-1, {AirSupport_SUBMENU set [2, ["ELVIS (ELVIS)", [3], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\ELVIS.sqf'"]], "1", "1"]]}] call CBA_fnc_globalExecute;
 // Script complete
 _dude sideChat "Copy that, Hammer. KINGFISH out.";

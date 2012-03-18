@@ -116,7 +116,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4329.2236,15.254852,2288.8167};
+					position[]={4286.1313,15.254852,2294.4692};
 					id=9;
 					side="WEST";
 					vehicle="rb_teamleader";
@@ -155,7 +155,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4333.73,15.254852,2289.9653};
+					position[]={4290.6377,15.254852,2295.6179};
 					azimut=-35.778301;
 					id=11;
 					side="WEST";
@@ -3319,7 +3319,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={4269.1372,15.308119,2325.332};
+			position[]={4299.1099,15.254852,2313.26};
 			id=6;
 			side="EMPTY";
 			vehicle="BAF_Jackal2_GMG_D";
@@ -3337,7 +3337,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={4255.5542,15.307446,2325.2646};
+			position[]={4285.5269,15.254852,2313.1926};
 			id=8;
 			side="EMPTY";
 			vehicle="BAF_Jackal2_GMG_D";
@@ -3538,21 +3538,21 @@ class Mission
 		items=7;
 		class Item0
 		{
-			position[]={4296.4219,15.254852,2294.9651};
+			position[]={4285.6011,15.254852,2299.4678};
 			name="steubenSpawn";
 			text="steubenSpawn";
 			type="Empty";
 		};
 		class Item1
 		{
-			position[]={4305.3799,15.254852,2294.7747};
+			position[]={4294.4624,15.254852,2299.4707};
 			name="bbqSpawn";
 			text="bbqSpawn";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={4300.8154,15.254852,2288.9824};
+			position[]={4294.8784,15.254852,2292.5273};
 			name="respawn_west";
 			text="respawn_West";
 			type="Empty";
@@ -3575,7 +3575,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={4321.7773,15.254852,2313.1208};
+			position[]={4322.3691,15.254852,2312.8247};
 			name="elvisSpawn";
 			text="elvisSpawn";
 			type="Empty";
@@ -3615,15 +3615,16 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={1344.7972,2.8518448,739.24438};
-			a=65;
-			b=65;
+			position[]={1425.0017,2.8518448,683.62061};
+			a=265;
+			b=265;
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="this AND getDammage grad3 == 1 AND getDammage grad4 == 1 AND getDammage grad1 == 1 AND getDammage grad2 == 1;";
+			expCond="this AND getDammage grad1 == 1 AND getDammage grad2 == 1 AND getDammage grad3 == 1 AND getDammage grad4 == 1;";
 			class Effects
 			{
+				sound="fanfare";
 			};
 		};
 		class Item2
@@ -3638,24 +3639,24 @@ class Mission
 			age="UNKNOWN";
 			class Effects
 			{
-				soundDet="Muslim_prayer1";
+				sound="fanfare";
 				titleType="TEXT";
 				title="TASK ACCOMPLISHED: GERENUK DESERT CLEARED";
 			};
 		};
 		class Item3
 		{
-			position[]={3470.8677,54.820221,5486.0444};
-			a=265;
-			b=165;
+			position[]={3548.699,46.531445,5433.6841};
+			a=400;
+			b=400;
 			angle=-94.768204;
-			activationBy="EAST";
-			activationType="NOT PRESENT";
+			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="this AND getDammage ammotruck1 == 1 AND getDammage ammotruck2 == 1 AND getDammage ammotruck3 == 1;";
 			class Effects
 			{
+				sound="fanfare";
 				titleType="TEXT";
 				title="TASK ACCOMPLISHED: ENEMY SUPPLIES DESTROYED!";
 			};

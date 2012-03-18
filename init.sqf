@@ -8,8 +8,12 @@ debugModeOn = false;
 [] execVM "loadout\playersinit.sqf";
 [] execVM "loadout\victors\setupVictors.sqf";
 [] execVM "extras\commMenu\customComms.sqf";
+major setGroupID ["HAMMER","GroupColor4"];
+Hammer = group major;
+
 
 opforCenter = createCenter EAST;
+setViewDistance 2500;
 
 // setup multiplayer broadcast system
 "broadcast" addPublicVariableEventHandler {[_this select 1] execVM "broadcast.sqf"};

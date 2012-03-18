@@ -11,9 +11,9 @@ victor removeAction supportMenuCAS;
 if (supportCAS) then
 {
 		_dude =_this select 1;
-		_dude sideChat "Hammer, this is Ghostrider. Requesting CAS. How copy?";
+		_dude sideChat "Hammer, this is KINGFISH. Requesting CAS. How copy?";
 		sleep 2;
-		major sideChat "Negative, Ghostrider. Manatee is on business. Coordinate with fellow teamleaders. Hammer out.";
+		major sideChat "Negative, KINGFISH. Manatee is on business. Coordinate with fellow teamleaders. Hammer out.";
 		
 		// Reset Victor Action
 		supportMenu1= victor addAction [("<t color=""#ff6600"">" + ("Call in support") + "</t>"),"extras\supportSquad\supportSquadChoose.sqf", [], 300, false, true, ""];
@@ -28,7 +28,7 @@ if (!supportCAS) then
 		publicVariable "casRemove";
 		
 		_dude =_this select 1;
-		_dude sideChat "Hammer, this is Ghostrider. Requesting CAS. How copy?";
+		_dude sideChat "Hammer, this is KINGFISH. Requesting CAS. How copy?";
 		
 		// CAS TEAM SPAWNEN
 		
@@ -48,15 +48,15 @@ if (!supportCAS) then
 		"US_Soldier_Pilot_EP1" createUnit [getMarkerPos "manateeSpawn", teamCAS1, "manatee2=this", 1, ""];
 		manatee2 moveInGunner manatee;
 		
-		major sideChat "Solid Copy, Ghostrider. Stand by.";
+		major sideChat "Solid Copy, KINGFISH. Stand by.";
 		
 		sleep 6;
 		
 		waitUntil {(vehicle manatee1 != manatee1) AND (vehicle manatee2 != manatee2)};		
 		[manatee1, manatee2] joinSilent group _dude;
-		major sideChat "Ghostrider, I have patched you through. MANATEE is all yours now.";
+		major sideChat "KINGFISH, I have patched you through. MANATEE is all yours now.";
 		sleep 2;
-		_dude sideChat "Roger, Hammer. Ghostrider out.";
+		_dude sideChat "Roger, Hammer. KINGFISH out.";
 		
 		clearSupportCAS= victor addAction [("<t color=""#ff6600"">" + ("Dismiss MANATEE") + "</t>"),"extras\supportSquad\CASClear.sqf", [], 300, false, true, ""]; 
 		
@@ -106,11 +106,11 @@ if (!supportCAS) then
 			
 			if ((getDammage manatee >= 0.3)  OR (!alive manatee1) OR (!alive manatee2)) exitWith 
 			{
-					_dude sideChat "Hammer, this is Ghostrider. Be advised, Manatee is down. I say again, Manatee is down! ";
+					_dude sideChat "Hammer, this is KINGFISH. Be advised, Manatee is down. I say again, Manatee is down! ";
 					victor removeAction clearSupportCAS;
 					
 					sleep 3;
-					major sideChat "Ghostrider, this is Hammer actual. Any chance the pilots made it out alive? Over.";
+					major sideChat "KINGFISH, this is Hammer actual. Any chance the pilots made it out alive? Over.";
 					sleep 7;
 					
 					deleteVehicle manatee1;
@@ -121,7 +121,7 @@ if (!supportCAS) then
 					[] execVM "extras\supportSquad\supportSquadInit.sqf";
 					[-1, {AirSupport_SUBMENU set [2, ["Manatee (CAS)", [3], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\CAS.sqf'"]], "1", "1"]]}] call CBA_fnc_globalExecute;
 					sleep 3;
-					_dude sideChat "Pretty much zero, Hammer. Ghostrider out.";
+					_dude sideChat "Pretty much zero, Hammer. KINGFISH out.";
 			};
 			
 			sleep 35;

@@ -26,7 +26,7 @@ manatee_WP1 setWaypointStatements ["true", "RTB=true"];
 
 sleep 2;
 
-manatee1 sideChat "Copy that Ghostrider. Manatee RTB, out.";
+manatee1 sideChat "Copy that KINGFISH. Manatee RTB, out.";
 
 waitUntil {RTB};
 
@@ -44,13 +44,14 @@ deleteVehicle manatee;
 supportMCAS = false;
 publicVariable "supportMCAS";
 
-major sideChat "All Ghostrider elements, be advised: Close Air Support standing by.";
+major sideChat "All KINGFISH elements, be advised: Close Air Support standing by.";
 
+RTB = false;
 supportCASBusy = false;
 publicVariable "supportCASBusy";
 
 // Reset Victor Action
-[] execVM "extras\supportSquad\supportSquadInit.sqf";
+//[] execVM "extras\supportSquad\supportSquadInit.sqf";
 [-1, {AirSupport_SUBMENU set [2, ["Manatee (CAS)", [3], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\CAS.sqf'"]], "1", "1"]]}] call CBA_fnc_globalExecute;
 // Script complete
-_dude sideChat "Copy that, Hammer. Ghostrider out.";
+_dude sideChat "Copy that, Hammer. KINGFISH out.";

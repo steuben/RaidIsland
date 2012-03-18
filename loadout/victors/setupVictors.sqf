@@ -115,6 +115,7 @@ bird addMagazineCargo ["ACE_Battery_Rangefinder",30];
 bird addWeaponCargo ["ACE_GlassesLHD_glasses",30];
 bird addWeaponCargo ["ACE_Earplugs",30];
 bird addWeaponCargo ["NVGoggles",30];
+bird addWeaponCargo ["ACE_ParachutePack",30];
 
 // SECONDARY
 

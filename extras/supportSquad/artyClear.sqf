@@ -25,5 +25,5 @@ publicVariable "supportMCASBusy";
 
 major sideChat "Hammer standing by for further fire missions. Out.";
 // Reset Victor Action
-[] execVM "extras\supportSquad\supportSquadInit.sqf";
+//[] execVM "extras\supportSquad\supportSquadInit.sqf";
 [-1, {Support_MAINMENU set [1, ["Mortars", [2], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\arty.sqf'"]], "1", "1"]]}] call CBA_fnc_globalExecute;

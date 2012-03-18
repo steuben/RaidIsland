@@ -1,17 +1,4 @@
 
-/*[-1, {Support_MAINMENU set [1, ["Mortars", [2], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\arty.sqf'"]], "1", "0"]]}] call CBA_fnc_globalExecute;
-sleep 1;
-Support_MAINMENU set [1, ["Dismiss Mortars", [2], "", -5, [["expression", "[0, player] execVM 'extras\supportSquad\artyClear.sqf'"]], "1", "1"]];
-
-victor removeAction supportMenuArty;
-victor removeAction supportMenuCAS;
-victor removeAction supportMenuSupply;
-*/
-
-Hammer = group major;
-major setGroupID ["HAMMER","GroupColor4"];
-
-
 if (supportMCAS) then
 {
 	_dude =_this select 1;

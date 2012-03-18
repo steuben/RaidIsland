@@ -1,9 +1,9 @@
 
 
 alpha = group steuben;
-steuben setGroupID ["2-ALPHA","GroupColor4"];
+steuben setGroupID ["KINGFISH-ALPHA","GroupColor4"];
 bravo = group bbq;
-bbq setGroupID ["2-BRAVO","GroupColor4"];
+bbq setGroupID ["KINGFISH-BRAVO","GroupColor4"];
 
 
 //steuben loadout

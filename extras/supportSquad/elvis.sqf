@@ -64,6 +64,12 @@ if (!supportELVIS) then
 		sleep 2;
 		_dude sideChat "Roger, Hammer. Kingfish out.";
 		
+		supportELVIS = true;
+		publicVariable "supportELVIS";
+		
+		supportELVISBusy = false;
+		publicVariable "supportELVISBusy";
+		
 		
 		
 		
@@ -153,6 +159,7 @@ if (!supportELVIS) then
 				elvis addWeaponCargo ["ACE_GlassesLHD_glasses",30];
 				elvis addWeaponCargo ["ACE_Earplugs",30];
 				elvis addWeaponCargo ["NVGoggles",30];
+				elvis addWeaponCargo ["ACE_ParachutePack",20];
 
 				// SECONDARY
 
@@ -168,20 +175,7 @@ if (!supportELVIS) then
 				elvis addWeaponCargo ["revolver_EP1",200];
 		
 		
-		
-		
-		
-		
-		
-		supportELVIS = true;
-		publicVariable "supportELVIS";
-		
-		supportELVISBusy = false;
-		publicVariable "supportELVISBusy";
-		
-		
-		
-		
+
 		
 		// Check Elvis's Status, remove & reset if dead or kapott.
 		
