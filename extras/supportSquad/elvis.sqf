@@ -36,6 +36,8 @@ if (!supportELVIS) then
 			[] execVM "loadout\reinforcement.sqf";
 			loadout = elvis addAction ["Save Gear","loadout\loadout.sqf"];
 		
+		
+		[] execVM "extras\atv\initATV.sqf";
 		sleep 3;
 
 		

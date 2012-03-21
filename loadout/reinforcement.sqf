@@ -127,7 +127,11 @@ _weapons = player getVariable "weapons";
 {player addMagazine _x} forEach _magazines;
 {player addWeapon _x} forEach _weapons;
 reload player;
-player setDamage 0;
+steuben setDamage 0;
+bbq setDamage 0;
+{_x setDamage 0} forEach units group steuben;
+{_x setDamage 0} forEach units group bbq;
+
 
 //remove all KilledEH´s
 {_x removeAllEventHandlers "MPkilled"} forEach units group player;

@@ -2,9 +2,9 @@
 if (supportMCAS) then
 {
 	_dude =_this select 1;
-	_dude sideChat "Hammer, this is Ghostrider. Requesting fire mission, stat!";
+	_dude sideChat "Hammer, this is KINGFISH. Requesting fire mission, stat!";
 	sleep 2;
-	major sideChat "Negative, Ghostrider. Battery already assigned to ongoing firemission. Coordinate with fellow teamleaders. Hammer out.";
+	major sideChat "Negative, KINGFISH. Battery already assigned to ongoing firemission. Coordinate with fellow teamleaders. Hammer out.";
 	
 	// Reset Victor Action
 	supportMenu1= victor addAction [("<t color=""#ff3300"">" + ("Call in support") + "</t>"),"extras\supportSquad\supportSquadChoose.sqf", [], 300, false, true, ""];
@@ -17,7 +17,7 @@ if (!supportMCAS) then
 		publicVariable "supportMCASBusy";
 		
 		_dude =_this select 1;
-		_dude sideChat "Hammer, this is Ghostrider. Requesting fire mission, stat!";
+		_dude sideChat "Hammer, this is KINGFISH. Requesting fire mission, stat!";
 		
 		// ARTY TEAM SPAWNEN
 		
@@ -34,7 +34,7 @@ if (!supportMCAS) then
 		//sleep 5;
 		mortarTeamGunner2 moveInGunner mcHammer2;
 		
-		major sideChat "Solid Copy, Ghostrider. Stand by.";
+		major sideChat "Solid Copy, KINGFISH. Stand by.";
 		
 		sleep 4;
 		
@@ -42,9 +42,9 @@ if (!supportMCAS) then
 		
 		waitUntil {(vehicle mortarTeamGunner1 != mortarTeamGunner1) AND (vehicle mortarTeamGunner2 != mortarTeamGunner2)};
 		[mortarTeamGunner1, mortarTeamGunner2] joinSilent group _dude;
-		major sideChat "Ghostrider, Hammer is ready to rock. Happy hunting, over.";
+		major sideChat "KINGFISH, Hammer is ready to rock. Happy hunting, over.";
 		sleep 2;
-		_dude sideChat "Roger, Hammer. Ghostrider out.";
+		_dude sideChat "Roger, Hammer. KINGFISH out.";
 		
 		supportMCAS = true;
 		publicVariable "supportMCAS";

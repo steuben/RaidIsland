@@ -41,12 +41,13 @@ deleteVehicle manatee1;
 deleteVehicle manatee2; 
 deleteVehicle manatee; 
 
-supportMCAS = false;
-publicVariable "supportMCAS";
+supportCAS = false;
+publicVariable "supportCAS";
 
 major sideChat "All KINGFISH elements, be advised: Close Air Support standing by.";
 
 RTB = false;
+publicVariable "RTB";
 supportCASBusy = false;
 publicVariable "supportCASBusy";
 

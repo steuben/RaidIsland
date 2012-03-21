@@ -47,6 +47,7 @@ deleteVehicle ELVIS4;
 deleteVehicle ELVIS; 
 
 elvisRTB = false;
+publicVariable "elvisRTB";
 supportELVIS = false;
 publicVariable "supportELVIS";
 
