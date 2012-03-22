@@ -1,5 +1,5 @@
-elvis setVariable ["empty", false, true];
-elvis addAction ["Unload Victor 1","extras\atv\unloadATV.sqf", [], 300, false, true, "", "alive _target && speed _target < 30 && !(elvis getVariable 'empty')"];
+//elvis setVariable ["empty", false, true];
+elvis addAction ["Unload Vehicles","extras\atv\unloadATV.sqf", [], 300, false, true, "", "alive _target && speed _target < 30"];
 
 //turboATV actionKey
 /*
