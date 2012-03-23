@@ -98,7 +98,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4363.5776,14.936981,2064.5737};
+					position[]={4363.0239,14.936981,2070.114};
 					id=5;
 					side="LOGIC";
 					vehicle="ACE_RadioTalk_Logic";
@@ -137,7 +137,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4449.6919,14.936981,2062.0198};
+					position[]={4446.3696,14.936981,2068.6677};
 					id=10;
 					side="LOGIC";
 					vehicle="BIS_SRRS_Logic";
@@ -159,7 +159,7 @@ class Mission
 					azimut=-35.778301;
 					id=11;
 					side="WEST";
-					vehicle="rb_teamleader";
+					vehicle="rb_medic";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -198,7 +198,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4503.2407,14.936981,2057.8855};
+					position[]={4506.3325,14.936981,2071.0137};
 					azimut=-91.862686;
 					id=23;
 					side="LOGIC";
@@ -2378,7 +2378,7 @@ class Mission
 				};
 				class Item11
 				{
-					position[]={4434.0508,14.897629,6392.6978};
+					position[]={4442.7256,14.897629,6353.6426};
 					class Effects
 					{
 					};
@@ -2705,7 +2705,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={4531.2227,21.643982,6510.7998};
+					position[]={4579.0718,14.897632,6584.6606};
 					class Effects
 					{
 					};
@@ -2713,7 +2713,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={4964.3252,17.855585,6111.5771};
+					position[]={4084.6631,15.954436,6668.1519};
 					class Effects
 					{
 					};
@@ -2721,7 +2721,7 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={4426.8584,14.897629,6468.896};
+					position[]={3982.2893,14.723115,6440.6904};
 					class Effects
 					{
 					};
@@ -3583,7 +3583,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={3505.9456,60.314953,5429.4233};
+			position[]={3505.9456,52.636768,5465.6733};
 			name="opfor1";
 			markerType="ELLIPSE";
 			type="Empty";
