@@ -131,6 +131,21 @@ class ButtonControlContent
 	text = "";
   };
   
+  class bgShape2
+  {
+	idc = -1;
+	type =  0 ;  
+	style = 0; 
+	moving = true;
+	colorText[] = { 0, 0, 0, 1 };
+	colorBackground[] = { 0.4, 0.4, 0.3, 0.6 };
+	font = "EtelkaMonospaceProBold";
+	sizeEx = 0.023;
+	x = 0.4; y = 0.2;
+	w = 0.515;  h = 0.57;
+	text = "";
+  };
+  
   
   // TITLE BAR
   class titleBarText 

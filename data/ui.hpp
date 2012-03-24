@@ -39,8 +39,8 @@ class uiAssmanDismissELVIS
 
   idd = -1;
   movingEnable = true;
-  controlsBackground[] = {"bgShape","titleBarText"};
-  controls[] = {"titleDismissELVIS","btn_backToStart","btn_dismissELVIS","btn_close"};
+  controlsBackground[] = {"bgShape2","titleBarText"};
+  controls[] = {"titleDismissELVIS","btn_backToStart","btn_markLZ","btn_dismissELVIS","btn_close"};
   objects[] = {};
   
   #include "assmanDismissELVIS.hpp"

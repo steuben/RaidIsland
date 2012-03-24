@@ -39,7 +39,8 @@ if (!supportELVIS) then
 		
 		[] execVM "extras\atv\initATV.sqf";
 		
-		elvis addaction ["Goto Airdrop Height","extras\supportSquad\elvisAirdrop.sqf",[],1,false,true,"",""];
+		elvis addaction ["Goto Airdrop Height","extras\supportSquad\elvisAirdropHeight.sqf",[],1,false,true,"",""];
+		elvis addaction ["AIRDROP","extras\supportSquad\elvisAirdrop.sqf",[],1,false,true,"",""];
 		
 		sleep 3;
 

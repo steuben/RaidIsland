@@ -29,4 +29,8 @@ _atv2 addaction ["Attach Vehicle","extras\atv\attachATV.sqf",[],1,false,true,"",
 	speed _target < 3;
 "];
 	
+gnrf_respawnInfo set [5, [_atv1, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters:
+gnrf_respawnInfo set [6, [_atv2, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters:
+	
+	
 /*(_nook getVariable 'empty') AND*/ 

@@ -12,7 +12,7 @@
 
 // BUTTONS
   
-  class btn_dismissELVIS:ButtonControlContent 
+  class btn_markLZ:ButtonControlContent 
   {
     
 	idc = -1;
@@ -20,6 +20,25 @@
 	
     x = 0.46;
     y = 0.48;
+	
+	h = 0.1;
+    w = 0.395;
+	
+	font = "EtelkaMonospaceProBold";
+    sizeEx = 0.054;
+	
+	text = "MARK LZ";
+	action = "[0, player] execVM ""extras\supportSquad\elvisMarkLZ.sqf""; closeDialog 0;"	
+  };
+  
+  class btn_dismissELVIS:ButtonControlContent 
+  {
+    
+	idc = -1;
+    type = 1;
+	
+    x = 0.46;
+    y = 0.60;
 	
 	h = 0.1;
     w = 0.395;
