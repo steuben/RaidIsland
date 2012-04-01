@@ -29,7 +29,8 @@ class Mission
 		"ibr_datsun",
 		"Warfare2Vehicles",
 		"rangers",
-		"Molatian_Army"
+		"Molatian_Army",
+		"caair_e"
 	};
 	addOnsAuto[]=
 	{
@@ -55,6 +56,7 @@ class Mission
 		"camisc3",
 		"CAWheeled",
 		"Warfare2Vehicles",
+		"caair_e",
 		"ibr_isladuala"
 	};
 	randomSeed=6736804;
@@ -5040,7 +5042,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			position[]={4269.9517,15.254852,2307.3818};
@@ -5288,6 +5290,17 @@ class Mission
 			vehicle="WarfareReammoTruck_INS";
 			skill=0.60000002;
 			text="ammotruck3";
+		};
+		class Item25
+		{
+			position[]={4345.4478,15.254852,2288.5645};
+			azimut=89.135803;
+			id=264;
+			side="EMPTY";
+			vehicle="C130J_US_EP1";
+			skill=0.60000002;
+			text="gnarfForce1";
+			init="this addAction[""HALO"",""extras\halo.sqf""];";
 		};
 	};
 	class Markers
