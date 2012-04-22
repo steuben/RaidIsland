@@ -17,6 +17,8 @@ if (!isDedicated) then {
 	[] execVM "extras\surveillance\revealUnits.sqf";
 	[] execVM "extras\mapTool.sqf";
 	[] execVM "extras\assman\assmanInit.sqf";
+	
+	[] execVM "extras\upi.sqf";
 	[] spawn grnf_addActions_fnc;		
 	_fnc_debugRank = {while {true} do {player setUnitRank "COLONEL"; sleep 2;};};
 	[] spawn _fnc_debugRank;
@@ -49,6 +51,7 @@ bravoKills = [];
 alphaTeamKills = [];
 bravoTeamKills = [];
 
+
 //////serverFunctions preCompiled
 
 grnf_SGetDisplayName_fnc = compile preProcessFileLineNumbers "server\functions\serverGetDisplayName.sqf";
@@ -63,6 +66,8 @@ publicVariable "killDetector_compiled";
 
 
 //////scripte
+
+[] execVM "extras\aircraftCarrier.sqf";
 
 //[] execVM "extras\noGoZone\noGoZoneServer.sqf";
 //[] execVM "extras\opforAssault\assaultInit.sqf";

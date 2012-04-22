@@ -31,7 +31,9 @@ class Mission
 		"rangers",
 		"Molatian_Army",
 		"caair_e",
-		"caair_e_an2"
+		"caair_e_an2",
+		"cawater2_fregata",
+		"cawater2_destroyer"
 	};
 	addOnsAuto[]=
 	{
@@ -182,8 +184,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4581.2686,15.254852,2319.2546};
-					azimut=-66.388428;
+					position[]={4917.8276,14.936981,2335.0852};
+					azimut=-9.0875587;
 					id=21;
 					side="WEST";
 					vehicle="FR_Commander";
@@ -8174,8 +8176,8 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={4573.1079,15.254852,2310.1895};
-			azimut=-93.087303;
+			position[]={4905.7886,14.936981,2337.0549};
+			azimut=-35.786427;
 			id=12;
 			side="EMPTY";
 			vehicle="M1129_MC_EP1";
@@ -8185,8 +8187,8 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={4572.3032,14.953361,2329.4846};
-			azimut=-91.728897;
+			position[]={4921.5933,14.936981,2348.157};
+			azimut=-34.428024;
 			id=13;
 			side="EMPTY";
 			vehicle="M1129_MC_EP1";
@@ -8196,8 +8198,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={4584.896,15.254852,2315.7373};
-			azimut=-192.28087;
+			position[]={4916.8271,14.936981,2330.1321};
+			azimut=-134.98003;
 			id=14;
 			side="EMPTY";
 			vehicle="ACE_WeaponBox_Default";
@@ -8205,8 +8207,8 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={4579.6919,15.184314,2322.219};
-			azimut=-18.591238;
+			position[]={4919.4707,14.936981,2338.0144};
+			azimut=38.709641;
 			id=15;
 			side="EMPTY";
 			vehicle="ACE_WeaponBox_BIS_GER";
@@ -8214,8 +8216,8 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={4582.2017,15.254852,2315.7092};
-			azimut=-139.84685;
+			position[]={4915.3481,14.936981,2332.3845};
+			azimut=-82.545975;
 			id=16;
 			side="EMPTY";
 			vehicle="ace_sys_weapons_magicbox";
@@ -8223,8 +8225,8 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={4579.8403,15.254852,2317.8018};
-			azimut=-139.84685;
+			position[]={4915.8335,14.936981,2335.5007};
+			azimut=-82.545975;
 			id=17;
 			side="EMPTY";
 			vehicle="ACE_USSpecialWeaponsBox";
@@ -8232,8 +8234,8 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={4579.1919,15.244482,2320.3262};
-			azimut=-95.918427;
+			position[]={4917.6084,14.936981,2337.4126};
+			azimut=-38.617561;
 			id=18;
 			side="EMPTY";
 			vehicle="ACE_WeaponBox_USMC";
@@ -8241,8 +8243,8 @@ class Mission
 		};
 		class Item14
 		{
-			position[]={4582.0854,15.254852,2318.6997};
-			azimut=45.153191;
+			position[]={4917.8022,14.936981,2334.0984};
+			azimut=102.45401;
 			id=19;
 			side="EMPTY";
 			vehicle="Land_CamoNetVar_NATO_EP1";
@@ -8250,8 +8252,8 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={4585.9419,15.254852,2317.5803};
-			azimut=-80.643265;
+			position[]={4918.9438,14.936981,2330.2488};
+			azimut=-23.342394;
 			id=20;
 			side="EMPTY";
 			vehicle="ACE_RuckBox_West";
@@ -8259,8 +8261,8 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4572.0381,15.254852,2318.0103};
-			azimut=223.41846;
+			position[]={4911.7939,14.936981,2342.1802};
+			azimut=280.71933;
 			special="NONE";
 			id=22;
 			side="EMPTY";
@@ -8398,11 +8400,11 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4583.2695,15.254852,2319.1743};
+			position[]={4918.8423,14.936981,2333.3582};
 			name="mortarTeamSpawn";
 			text="mortarTeamSpawn";
 			type="Empty";
-			angle=-152.53056;
+			angle=-95.229691;
 		};
 		class Item4
 		{

@@ -1,4 +1,4 @@
-
+carrierSpawnPos = ussChickenfucker modelToWorld [0,0,18];
 
 alpha = group steuben;
 steuben setGroupID ["KINGFISH-ALPHA","GroupColor4"];
@@ -8,7 +8,6 @@ bbq setGroupID ["KINGFISH-BRAVO","GroupColor4"];
 
 //steuben loadout
 _unit = steuben;
-_unit setPos getMarkerPos "steubenSpawn";
 removeAllWeapons _unit;
 
 // PRIMARY WEAPON MAGS / 12 slots (S) (zb stanag) / 6 slots (M) (zb betaC / smaw rocket)
@@ -76,7 +75,6 @@ if (steuben hasWeapon "ACE_Earplugs") then {
 // BBQ Loadout
 
 _unit = bbq;
-_unit setPos getMarkerPos "bbqSpawn";
 removeAllWeapons _unit;
 
 // PRIMARY WEAPON MAGS / 12 slots (S) (zb stanag) / 6 slots (M) (zb betaC / smaw rocket)
@@ -650,11 +648,15 @@ publicVariable "gnrf_initCounter";
 player setVariable ["magazines", magazines player];
 player setVariable ["weapons", weapons player];
 
+// MOVE UNITS
+
+{
+ _spawnPos = ussChickenFucker modelToWorld [-3+(random 6),-3+(random 6),18];
+ _x setPos _spawnPos;
+} forEach units group player;
+
 gnrf_respawnInfo = [];
-gnrf_respawnInfo set [0, [bird, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
-gnrf_respawnInfo set [1, [jackal1, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
-gnrf_respawnInfo set [2, [jackal2, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
-gnrf_respawnInfo set [3, [bird2, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
+gnrf_respawnInfo set [0, [carrierSpawnPos, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
 publicVariable "gnrf_respawnInfo";	
 
 //attach helper arrow
