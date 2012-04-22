@@ -62,6 +62,19 @@
 	text = "SATSCAN";
 	action = "[] execVM ""extras\surveillance\satelliteScan.sqf""; assmanStart = false; closeDialog 0;"	
   };
+  
+  class btn_spawnCamp:ButtonControlContent 
+  {
+    
+	idc = -1;
+    type = 1;
+	
+    x = 0.42;
+    y = 0.623;
+	
+	text = "MAKE CAMP";
+	action = "if (spawnCampBusy) exitWith {hint ""ASSET BUSEY""}; if (!spawnCampActive) then {[0, player] execVM ""extras\spawnCamp\spawnCamp.sqf""; assmanStart = false; closeDialog 0};   if (spawnCampActive) then { closeDialog 0; _ok = createDialog ""uiAssmanBreakCamp""; };"	
+  };
 
   class btn_reqAirsupport:ButtonControlContent 
   {

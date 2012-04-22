@@ -24,6 +24,11 @@ if (!isDedicated) then {
 	[] execVM "extras\freezeTime.sqf";
 	[] execVM "client\eventHandlers.sqf";
 	
+	
+	// CONDITIONS
+	spawnCampActive = false;
+	publicVariable "spawnCampActive";
+	
 };
 
 ///////////////ab hier Server only//////////////////

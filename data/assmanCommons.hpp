@@ -127,7 +127,7 @@ class ButtonControlContent
 	font = "EtelkaMonospaceProBold";
 	sizeEx = 0.023;
 	x = 0.4; y = 0.2;
-	w = 0.515;  h = 0.5;
+	w = 0.515;  h = 0.55;
 	text = "";
   };
   
