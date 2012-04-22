@@ -1,4 +1,4 @@
-carrierSpawnPos = ussChickenfucker modelToWorld [0,0,18];
+
 
 alpha = group steuben;
 steuben setGroupID ["KINGFISH-ALPHA","GroupColor4"];
@@ -651,13 +651,12 @@ player setVariable ["weapons", weapons player];
 // MOVE UNITS
 
 {
- _spawnPos = ussChickenFucker modelToWorld [-3+(random 6),-3+(random 6),18];
+ _spawnPos = ussChickenFucker modelToWorld [-2+(random 4),-2+(random 4),18];
  _x setPos _spawnPos;
 } forEach units group player;
 
 gnrf_respawnInfo = [];
-gnrf_respawnInfo set [0, [carrierSpawnPos, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
-publicVariable "gnrf_respawnInfo";	
+
 
 //attach helper arrow
 if ((paramsArray select 5) == 1) then 

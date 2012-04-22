@@ -8272,11 +8272,12 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={4321.9683,15.254852,2312.4119};
+			position[]={4322.3574,15.254852,2312.5347};
 			id=24;
 			side="EMPTY";
 			vehicle="HeliH";
 			skill=0.60000002;
+			text="elvisPad";
 		};
 		class Item18
 		{
@@ -8416,11 +8417,11 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={4322.3691,15.254852,2312.8247};
+			position[]={4322.3418,15.254852,2312.7747};
 			name="elvisSpawn";
 			text="elvisSpawn";
 			type="Empty";
-			angle=-227.44479;
+			angle=-227.44501;
 		};
 		class Item6
 		{

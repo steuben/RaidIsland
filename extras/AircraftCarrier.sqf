@@ -20,5 +20,11 @@ _parts =
 	publicVariable "ussChickenfucker";
 } foreach _parts;
 
+carrierSpawnPos = ussChickenfucker modelToWorld [0,0,18];
+
+gnrf_respawnInfo set [0, [carrierSpawnPos, 0]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
+publicVariable "gnrf_respawnInfo";	
+
+
 carrierElvisSpawnPos = ussChickenfucker modelToWorld [0,0,18];
 "elvisSpawn" setMarkerPos carrierElvisSpawnPos;
