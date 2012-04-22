@@ -650,10 +650,7 @@ player setVariable ["weapons", weapons player];
 
 // MOVE UNITS
 
-{
- _spawnPos = ussChickenFucker modelToWorld [-2+(random 4),-2+(random 4),18];
- _x setPos _spawnPos;
-} forEach units group player;
+
 
 
 gnrf_respawnInfo = [];
