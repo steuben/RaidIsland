@@ -16,8 +16,6 @@ _playerPos = player getVariable "deathPos";
 
 } forEach gnrf_respawnInfo;
 
-player sideChat format ["# %1 # %2 #", typeName _nearestPos, _nearestPos];///////
-
 if (typeName _nearestPos == "OBJECT") then 
 {
 	_carrierSpawn = _nearestPos == ussChickenFucker;
