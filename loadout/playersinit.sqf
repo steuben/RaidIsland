@@ -655,6 +655,7 @@ player setVariable ["weapons", weapons player];
  _x setPos _spawnPos;
 } forEach units group player;
 
+
 gnrf_respawnInfo = [];
 
 
