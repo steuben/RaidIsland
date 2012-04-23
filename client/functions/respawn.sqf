@@ -33,7 +33,7 @@ if (!_carrierSpawn) then
 	player setpos _spawnPos;
 } else 
 {
-	_spawnpos = USSChickenFucker modelToWorld [-2+(random 4),-2+(random 4),18];
+	_spawnpos = call gnrf_playerPos_fnc;
 	player setPosASL _spawnpos;
 };
 

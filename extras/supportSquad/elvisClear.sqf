@@ -17,7 +17,7 @@ ELVIS1 setGroupID ["ELVIS","GroupColor4"];
 
 sleep 2;
 
-ELVIS_WP1 = teamELVIS2 addWaypoint [getMarkerPos "ELVISSpawn", 1];
+ELVIS_WP1 = teamELVIS2 addWaypoint [getPos gnrf_elvisH, 1];
 ELVIS_WP1  setWaypointType "MOVE"; 
 ELVIS_WP1  setWaypointFormation "WEDGE";
 ELVIS_WP1  setWaypointBehaviour "SAFE";

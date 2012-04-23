@@ -27,16 +27,17 @@ if (!supportELVIS) then
 		_dude sideChat "Hammer, this is Kingfish. Requesting Priority Air Transport. How copy?";
 		
 		// CAS TEAM SPAWNEN
-		carrierElvisSpawnPos = ussChickenfucker modelToWorld [0,0,18];
 		
 			// COBRA TOW
-			//elvis="CH_47F_EP1" createVehicle getMarkerPos "elvisSpawn";
-			elvis="CH_47F_EP1" createVehicle carrierElvisSpawnPos;
+			elvis = "CH_47F_EP1" createVehicle [0,0,10000];
+			elvis setDir (getDir ussChickenfucker);
+			elvis setPosASL carrierElvisSpawnPos;
 			gnrf_respawnInfo set [4, [elvis, 10]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
+			
 			// APACHE
 			// Elvis="AH64D_EP1" createVehicle getMarkerPos "ElvisSpawn";
 			[] execVM "loadout\reinforcement.sqf";
-			loadout = elvis addAction ["Save Gear","loadout\loadout.sqf"];
+			elvis addAction ["Save Gear","loadout\loadout.sqf"];
 		
 		
 		[] execVM "extras\atv\initATV.sqf";

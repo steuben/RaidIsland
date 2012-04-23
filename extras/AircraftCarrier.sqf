@@ -1,4 +1,5 @@
 
+//create carrier
 _spawnpoint = [5270.46,315.985,0];
 
 _parts = 
@@ -20,22 +21,32 @@ _parts =
 } foreach _parts;
 publicVariable "ussChickenfucker";
 
-carrierElvisSpawnPos = ussChickenfucker modelToWorld [0,0,18];
+//define elvis spawnpos
+carrierElvisSpawnPos = ussChickenfucker modelToWorld [12,170,18.5];
+gnrf_elvisH = "heliHempty" createVehicle carrierElvisSpawnPos;
 "elvisSpawn" setMarkerPos carrierElvisSpawnPos;
 
+//define player / team spawn via function
+gnrf_playerPos_fnc =
+{
+	_pos = USSChickenFucker modelToWorld [-10+(random 6),95+(random 10),18.5];
+	_pos
+};
+publicVariable "gnrf_playerPos_fnc";
 
-//player and unit positions
+//move player / team to spawnpos
 {
 	_player = _x;
 	for "_i" from 0 to (count (units group _player))-1 do 
 	{
 		_unit = (units group _player) select _i;
-		_pos = USSChickenFucker modelToWorld [-2+(random 4),-2+(random 4),18];
+		_pos = call gnrf_playerPos_fnc;
 		_unit setPosASL _pos;
 	};
 
 } forEach gnrf_players;
 
+//set respawn info
 waitUntil {sleep 0.5; !isNil "gnrf_respawnInfo"};
 gnrf_respawnInfo set [0, [ussChickenfucker, 0]]; //add respawn pos - players always spawn at the nearest spawnpos. parameters: 
 publicVariable "gnrf_respawnInfo";
